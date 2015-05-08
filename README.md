@@ -225,7 +225,29 @@ user.active?
 ```
 
 
-###  **`Model.truncate(confirm)`**
+###  **`Model#saved?`**
+
+Returns the result after save a record using `save` or `update_attributes`
+
+
+Example saving the record.
+
+
+```
+user = User.new
+
+user.saved?
+ => nil
+
+user.update_attributes(email: "john.doe@example.com")
+  => true
+
+user.saved?
+ => true
+
+```
+
+###  **`Model.truncate!(confirm)`**
 
 Truncate the table reseting the primary key
 
