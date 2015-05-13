@@ -3,7 +3,7 @@ module SupportUtils
     isolate_namespace SupportUtils
 
     config.after_initialize do
-      ActiveRecord::Base.send(:include, SupportUtils::Concerns::Core)
+
     end
 
     config.before_initialize do

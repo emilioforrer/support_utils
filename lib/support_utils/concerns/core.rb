@@ -17,3 +17,4 @@ module SupportUtils
     end
   end
 end
+ActiveRecord::Base.send(:include, SupportUtils::Concerns::Core)
