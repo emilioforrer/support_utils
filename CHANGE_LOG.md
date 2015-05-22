@@ -1,5 +1,10 @@
 # CHANGE LOG
 
+## v0.2.0
+
+* added classes to publish and subscribe to ASN (ActiveSupport::Notifications) events
+
+
 ## v0.1.2
 
 * fixed bug: undefined method has_utils when using it in production environment
